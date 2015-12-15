@@ -5,7 +5,7 @@
     100 x 100 pixels
   .omega.eight.columns
     - if @object.logo.present?
-      = image_tag @object.logo(:medium)
+      #enterprise_logo= image_tag @object.logo(:medium)
       %p
         = f.check_box :delete_logo
         = f.label t(:admin_enterprise_image_delete)
@@ -21,7 +21,7 @@
 
   .omega.eight.columns
     - if @object.promo_image.present?
-      = image_tag @object.promo_image(:large)
+      #enterprise_promo_image= image_tag @object.promo_image(:large)
       %p
         = f.check_box :delete_promo_image
         = f.label t(:admin_enterprise_image_delete)
